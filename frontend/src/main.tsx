@@ -4,6 +4,10 @@ import "./index.css";
 import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layout/Layout.tsx";
+import About from "./components/About.tsx";
+import Paint from "./components/Paint.tsx";
+import Works from "./components/Works.tsx";
+import Reverberate from "./components/Reverberate.tsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +18,22 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <App />,
+      },
+      {
+        path: "reverberate",
+        element: <Reverberate />,
+      },
+      {
+        path: "works",
+        element: <Works />,
+      },
+      {
+        path: "paint",
+        element: <Paint />,
+      },
+      {
+        path: "about",
+        element: <About />,
       },
     ],
   },
