@@ -24,7 +24,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, toggleSidebar }) => {
       </button>
       <div className="navigation-container">
         <div className="sidebar-logo">
-          <img src="./images/stamp.jpg" alt="Logo" />
+          <img src="./images/logo.png" alt="alt-logo-text" />
         </div>
         <ul className="navigation-text">
           <li className="nav-item">
