@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-//import "../src/sass/app.scss";
 import Sidebar from "./components/Sidebar";
 import SlideShow from "./components/SlideShow";
-//import data from "../src/data/data.json";
 import About from "./components/About";
 import Paint from "./components/Paint";
 import Reverberate from "./components/Reverberate";
@@ -42,15 +40,6 @@ const App = () => {
       <Paint />
 
       <Reverberate />
-
-      {/* <div className="home">
-        {data.sections.map((section, index) => (
-          <section key={index} id={section.id}>
-            <h2>{section.title}</h2>
-            <p>{section.content}</p>
-          </section>
-        ))}
-      </div> */}
     </>
   );
 };
