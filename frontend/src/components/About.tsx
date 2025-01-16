@@ -1,6 +1,29 @@
-import "../sass/about.scss";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const aboutTextDiv =
+        document.querySelector<HTMLDivElement>("#about-text");
+      const aboutImgDiv = document.querySelector<HTMLDivElement>(".about-img");
+      const distance = window.scrollY;
+
+      if (aboutTextDiv) {
+        aboutTextDiv.style.transform = `translateY(${distance * -0.44}px)`;
+      }
+
+      if (aboutImgDiv) {
+        aboutImgDiv.style.transform = `translateY(${distance * -0.15}px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <section className="about-section container" id="about">

@@ -1,28 +1,58 @@
-import "../src/sass/app.scss";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+//import "../src/sass/app.scss";
+import Sidebar from "./components/Sidebar";
+import SlideShow from "./components/SlideShow";
+//import data from "../src/data/data.json";
+import About from "./components/About";
+import Paint from "./components/Paint";
+import Reverberate from "./components/Reverberate";
 
-function App() {
+const App = () => {
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      offset: 10,
+      duration: 350,
+      easing: "ease",
+      mirror: true,
+    });
+  }, []);
+
+  const toggleSidebar = () => setSidebarVisible(!sidebarVisible);
+
   return (
     <>
-      <section className="header">
+      <header className="header">
         <div className="logo">
-          <img src="./images/logo.png" alt="alt-logo-text"></img>
+          <img src="./images/logo.png" alt="alt-logo-text" />
         </div>
-
         <div className="toggleNavButton" id="toggleNavButton">
-          <button className="toggle-btn">
-            <i className="fas fa-bars fa-3x"></i>
+          <button className="toggle-btn" onClick={toggleSidebar}>
+            <img src="images/hamburger.png" alt="menu image"></img>
           </button>
         </div>
-        <div className="shifting-backgrounds">
-          <img
-            className="slideShow imgAnimation"
-            src="./images/banner01_desk.png"
-            alt="alt shifting-background img1"
-          ></img>
-        </div>
-      </section>
+        <SlideShow />
+      </header>
+      <Sidebar isVisible={sidebarVisible} toggleSidebar={toggleSidebar} />
+
+      <About />
+      <Paint />
+
+      <Reverberate />
+
+      {/* <div className="home">
+        {data.sections.map((section, index) => (
+          <section key={index} id={section.id}>
+            <h2>{section.title}</h2>
+            <p>{section.content}</p>
+          </section>
+        ))}
+      </div> */}
     </>
   );
-}
+};
 
 export default App;

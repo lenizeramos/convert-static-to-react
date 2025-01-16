@@ -1,8 +1,6 @@
-import "../sass/works.scss";
-
 const Works = () => {
   return (
-    <div>Works</div>
+    <div id="works">Works</div>
   )
 }
 

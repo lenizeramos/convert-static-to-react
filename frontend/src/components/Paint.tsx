@@ -1,9 +1,7 @@
-import "../sass/paint.scss";
-
 const Paint = () => {
   return (
     <>
-      <section className="paint-section about-text left-container">
+      <section className="paint-section about-text left-container" id="paint">
         <h5 data-aos="zoom-out">I Paint, Therefore I Am</h5>
         <h3 data-aos="zoom-out">我畫故我在</h3>
 
@@ -34,9 +32,7 @@ const Paint = () => {
           <div className="right parallax-scroll">
             <p data-aos="zoom-out"> Don’t like over-elaborate formalities,</p>
             <p data-aos="zoom-out"> Don’t enjoy citing classic works,</p>
-            <p data-aos="zoom-out">
-              Not good at giving long-winded statement,
-            </p>
+            <p data-aos="zoom-out">Not good at giving long-winded statement,</p>
             <p data-aos="zoom-out">
               I only use ingenuity, simplicity, modesty, and intuition to share
               and examine my notion of creativity,

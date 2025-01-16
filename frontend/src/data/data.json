@@ -1,0 +1,19 @@
+{
+  "sections": [
+    {
+      "id": "home",
+      "title": "HOME",
+      "content": "Explore the beauty ....."
+    },
+    {
+      "id": "about",
+      "title": "ABOUT",
+      "content": "Learn about the ....."
+    },
+    {
+      "id": "works",
+      "title": "WORKS",
+      "content": "Discover the amazing ....."
+    }
+  ]
+}

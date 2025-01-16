@@ -1,13 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+import "../src/sass/index.scss"
 import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layout/Layout.tsx";
-import About from "./components/About.tsx";
-import Paint from "./components/Paint.tsx";
-import Works from "./components/Works.tsx";
-import Reverberate from "./components/Reverberate.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,19 +17,19 @@ const router = createBrowserRouter([
       },
       {
         path: "reverberate",
-        element: <Reverberate />,
+        element: null,
       },
       {
         path: "works",
-        element: <Works />,
+        element: null,
       },
       {
         path: "paint",
-        element: <Paint />,
+        element: null,
       },
       {
         path: "about",
-        element: <About />,
+        element: null,
       },
     ],
   },
