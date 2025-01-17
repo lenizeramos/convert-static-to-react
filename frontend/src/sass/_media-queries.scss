@@ -1,0 +1,99 @@
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .sidebar {
+    padding: 20px;
+  }
+
+  .navigation-container {
+    width: 100%;
+  }
+
+  .sidebar-logo {
+    height: 30vh;
+  }
+
+  .cross-button {
+    top: 10%;
+    left: 60%;
+  }  
+
+  .about-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-img,
+  .about-text {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .dual-paragraphs {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-logo {
+    height: 25vh;
+  }
+
+  .toggleNavButton .toggle-btn {
+    right: 8%;
+  }
+
+  .about-section {
+    padding: 10px;
+  }
+
+  .about-text h5 {
+    font-size: 24px;
+  }
+
+  .about-text h3 {
+    font-size: 16px;
+  }
+
+  .paint-section {
+    padding: 10px;
+  }
+
+  .paint-section .btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  .paint-section.about-text.left-container > img {
+    opacity: 0.2;
+  }
+
+  .reverberate-section {
+    overflow: hidden;
+    padding: 10px;
+  }
+  .title {
+    width: 100%;
+    margin-left: 15%;
+  }
+  .title-text {
+    font-size: 36px;
+  }
+  .dual-containers {
+    flex-direction: column;
+  }
+
+  .dual-containers img {
+    display: none;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .big-quotation {
+    font-size: 100px;
+  }
+}

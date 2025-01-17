@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ******* GLOBAL VALUES ******* */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Remove Default Button Styles */
+button {
+  cursor: pointer;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+:root {
+  --parrallax-value: 100px;
+}
+
+body {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("./images/backgroundTest1.PNG");
+  background-repeat: repeat;
+  color: rgb(128, 128, 128);
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.background-texture img {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  filter: grayscale(100%);
+  background-repeat: repeat;
+  opacity: 0.5;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: gray;
+  }
+}
+
+* ul {
+  list-style: none;
+}
+
+.parallax-scroll {
+  padding: 20px;
+  color: black;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 200;
+}

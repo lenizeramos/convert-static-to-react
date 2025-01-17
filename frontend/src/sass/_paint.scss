@@ -1,0 +1,44 @@
+/* *********************************  Paint-Section ****************************/
+.paint-section {
+  position: relative;
+  width: 100vw;
+}
+.paint-section > h5 {
+  padding-top: 0;
+  font-weight: 600;
+}
+
+.left-container {
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20%;
+}
+.dual-paragraphs {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 90px;
+}
+
+.paint-section.about-text.left-container > img {
+  max-height: 100%;
+  width: auto;
+  position: absolute;
+  right: 0;
+  margin: 0;
+}
+
+.btn {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 3.2px;
+  color: white;
+  background-color: black;
+  margin-top: 90px;
+  margin-left: 20px;
+  padding: 20px 55px;
+}
